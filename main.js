@@ -26,6 +26,8 @@ async function fetchPrediction(){
         hr: hr.value,
         temp: temp.value,
     }
+
+    // https://pain-prediction-flask-web.onrender.com
     const resp = await fetch("https://pain-prediction-flask-web.onrender.com/predict", {
         method: "POST",
         headers,
